@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kudos Weather</title>
+    <link rel="shortcut icon" href="weather_favicon.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://www.windy.com/" target="_blank">Global</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bottom">Description</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#bottom2">Delhi</a></li>
+                            <li><a class="dropdown-item" href="#bottom3">Seattle</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#bottom4">Bangalore</a></li>
+                        </ul>
+                    
+                </ul>
+                <form class="d-flex" role="search">
+                    <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="my-4 text-center">Weather for <span id="cityName"></span></h1>
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal ">Temperature</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="temp2"></span><small
+                                    class="text-body-secondary fw-light"><span>&#8451;</span></small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Temperature is <span id="temp"></span></li>
+                                <li>Min Temperature is <span id="min_temp"></span></li>
+                                <li>Max Temperature is <span id="max_temp"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Humidity</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="humidity2"></span><small
+                                    class="text-body-secondary fw-light"> %</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Cloud PCT is <span id="cloud_pct"></span></li>
+                                <li>Feels Like is <span id="feels_like"></span></li>
+                                <li>Humidity is <span id="humidity"></span></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Wind</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title"><span id="wind_speed2"></span><small
+                                    class="text-body-secondary fw-light"> km/hr</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Wind Speed is <span id="wind_speed"></span></li>
+                                <li>Wind Degree is <span id="wind_degrees"></span></li>
+                                <li>Sunrise time is <span id="sunrise"></span></li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+           
+        </main>
+    </div>
+    <div>
+        <h1 class="my-4 text-center">Description</h1>
+        <div style="padding-left: 50px; padding-right: 50px; padding-top: 10px; font-size:larger;" id="bottom">
+            Introducing our innovative weather website, your ultimate destination for up-to-the-minute weather information! We bring you a comprehensive overview of meteorological conditions, offering a wealth of essential data to keep you informed and prepared. Whether you're planning your day, a weekend getaway, or simply curious about the elements, our site provides a detailed snapshot of the weather in your area. From maximum and minimum temperatures to cloud cover percentages, humidity levels, wind speed, and wind direction, we've got you covered with accurate and reliable information. Plus, we make sure you never miss a moment of nature's beauty by delivering sunrise times as well. Stay ahead of the weather curve with our user-friendly interface and make informed decisions for a safer and more enjoyable outdoor experience. Explore the elements like never before with our weather website!
+        </div>
+        <h1 class="my-4 text-left" style="padding-left: 40px;">Delhi</h1>
+        <div style="padding-left: 50px; padding-right: 50px; padding-top: 10px; font-size:larger" id="bottom2">
+            Delhi, the bustling capital of India, experiences a diverse range of weather conditions throughout the year. Summers in Delhi are typically scorching, with temperatures soaring well above 40 degrees Celsius (104 degrees Fahrenheit). This season is characterized by intense heat and dry spells, often prompting residents to seek respite in air-conditioned spaces. Monsoon arrives in July, bringing much-needed relief with refreshing rain showers that cool down the city and replenish its parched landscape. Humidity levels rise during this time, creating a muggy atmosphere. As the year progresses into autumn, Delhi enjoys pleasant weather with gradually declining temperatures, making it an ideal time for outdoor activities and cultural exploration. Winters in Delhi are chilly, with daytime temperatures ranging from 9 to 15 degrees Celsius (48 to 59 degrees Fahrenheit) and nights becoming notably colder. Foggy conditions can occasionally disrupt transportation, but the city's vibrant spirit persists year-round, offering something for everyone amidst its ever-changing climate.
+        </div>
+
+        <h1 class="my-4 text-left" style="padding-left: 40px;">Seattle</h1>
+        <div style="padding-left: 50px; padding-right: 50px; padding-top: 10px; font-size:larger" id="bottom3">
+            Seattle, nestled in the Pacific Northwest of the United States, is renowned for its unique and sometimes unpredictable weather patterns. Known affectionately as the "Emerald City," Seattle experiences a predominantly temperate maritime climate. Winters are relatively mild, with temperatures rarely dropping below freezing. Rain is a frequent companion during this season, contributing to the lush greenery that defines the city. Spring ushers in a welcome change, with blossoming cherry trees and daffodils adorning the landscape. Summers in Seattle are a glorious affair, characterized by mild to warm temperatures, often accompanied by clear skies and an abundance of outdoor festivals and activities. However, it's essential to keep in mind the city's reputation for occasional drizzles even in the sunniest months. Fall brings cooler temperatures and an array of fiery colors as leaves change, creating a picturesque setting. Seattle's weather is as diverse as its culture, making it a city of endless charm and surprises for both residents and visitors alike.
+        </div>
+        
+        <h1 class="my-4 text-left" style="padding-left: 40px;">Bangalore</h1>
+        <div style="padding-left: 50px; padding-right: 50px; padding-top: 10px; font-size:larger" id="bottom4">
+            Bangalore, often referred to as the "Garden City of India," boasts a delightful climate that sets it apart from many other Indian cities. Located in the southern state of Karnataka, Bangalore enjoys a moderate, temperate climate year-round. Summers are generally mild, with daytime temperatures averaging around 30 degrees Celsius (86 degrees Fahrenheit). Evenings offer a pleasant coolness, making outdoor activities enjoyable. Monsoons grace the city from June to September, bringing refreshing rain that transforms the lush greenery into a vibrant tapestry of colors. Winters in Bangalore are characterized by mild temperatures, seldom dropping below 15 degrees Celsius (59 degrees Fahrenheit), creating ideal conditions for leisurely walks and exploration. Bangalore's unique microclimate offers respite from extreme weather, making it a favored destination for those seeking comfortable and consistent weather conditions in India.
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
